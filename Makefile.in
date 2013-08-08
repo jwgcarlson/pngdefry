@@ -11,7 +11,7 @@ all: pngdefry
 pngdefry: pngdefry.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
 
-install:
+install: pngdefry
 	@cp pngdefry $(prefix)/bin/pngdefry
 
 clean:
