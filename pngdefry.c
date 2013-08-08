@@ -1376,21 +1376,7 @@ int main (int argc, char **argv)
 					strcpy (suffix, argv[i]+2);
 				} else
 				{
-					if (i < argc-1)
-					{
-						i++;
-						suffix = (char *)malloc(strlen(argv[i])+2);
-						if (suffix == NULL)
-						{
-							printf ("pngdefry : unexpected memory allocation error on line %d\n", __LINE__);
-							return -1;
-						}
-						strcpy (suffix, argv[i]);
-					} else
-					{
-						printf ("pngdefry : -s is missing suffix\n");
-						return -1;
-					}
+                    suffix = "";
 				}
 				argv[i][2] = 0;
 				flag_Rewrite = 1;
