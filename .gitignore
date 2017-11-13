@@ -1,1 +1,7 @@
 .idea
+Makefile
+config.h
+config.log
+config.status
+pngdefry
+pngdefry.o
